@@ -1,0 +1,5 @@
+# OCR
+ocr/aws/.terraform/*
+ocr/azure/.terraform/*
+.git/*
+.terraform.tfstate
