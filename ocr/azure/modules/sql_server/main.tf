@@ -6,7 +6,7 @@ resource "azurerm_mssql_server" "example" {
   location                     = var.location
   version                      = "12.0"
   administrator_login          = "useradmin"
-  administrator_login_password = "***"
+  administrator_login_password = "5k9aH4gENsBm*b2"
   minimum_tls_version          = "1.2"
 
   azuread_administrator {

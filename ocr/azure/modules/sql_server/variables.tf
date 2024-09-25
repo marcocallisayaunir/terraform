@@ -8,7 +8,7 @@ variable "location" {
 
 variable "sql_server_name" {
   type        = string
-  default     = "sqlm-sc-u-ocrdbcommon-01"
+  default     = "sqlm-sc-d-ocrdbcommon-01"
 }
 
 variable "tags" {

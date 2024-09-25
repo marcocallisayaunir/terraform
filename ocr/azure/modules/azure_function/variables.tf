@@ -1,11 +1,11 @@
 variable "storage_account_name" {
   type        = string
-  default     = "stscustgappfunctions01"
+  default     = "stscdstgappfunctions01"
 }
 
 variable "function_app_name" {
   type        = string
-  default     = "fna-sc-p-verifyendeddocscron-01"
+  default     = "fna-sc-d-verifyendeddocscron-01"
 }
 
 variable "resource_group_name" {

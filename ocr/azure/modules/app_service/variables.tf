@@ -1,7 +1,7 @@
 variable "service_plane_name" {
   description = "Service Plan Name"
   type        = string
-  default      = "example-service-plan-terraform"
+  default      = "plan-sc-d-ocr-01"
 }
 
 variable "resource_group_name" {
@@ -14,12 +14,6 @@ variable "location" {
   type        = string
 }
 
-variable "service_app_name" {
-  description = "Service App Name"
-  type        = string
-  default      = "example-service-app-terraform"
-}
-
 variable "tags" {
   description = "A map of tags to assign to resources"
   type        = map(string)
@@ -27,7 +21,7 @@ variable "tags" {
 }
 
 variable "apps" {
-  description = "List of the queues to create"
+  description = "List of the apps to create"
   type = map(object({
     app_service_name  =  string
   }))

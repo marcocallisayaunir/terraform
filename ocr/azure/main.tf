@@ -47,15 +47,6 @@ module "azure_function" {
   tags     = var.global_tags
 }
 
-# Creacion de la vm
-
-module "virtual_machine_windows" {
-  source = "./modules/virtual_machine_windows"
-  resource_group_name = var.resource_group_name
-  location = var.location
-  tags     = var.global_tags
-}
-
 # Creacion del sql server
 
 module "sql_server" {

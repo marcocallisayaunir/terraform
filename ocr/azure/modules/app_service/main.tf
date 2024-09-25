@@ -1,6 +1,6 @@
 # Creacion del service plan para el app service y los functions
 resource "azurerm_service_plan" "plan" {
-  name                = "plan-sc-u-ocr-01"
+  name                = var.service_plane_name
   resource_group_name = var.resource_group_name
   location            = var.location
   os_type             = "Linux"

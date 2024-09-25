@@ -1,11 +1,6 @@
 variable "servicebus_namespace_name" {
   type        = string
-  default     = "sb-sc-u-apiocr-01"
-}
-
-variable "servicebus_queue_name" {
-  type        = string
-  default     = "tfex_servicebus_queue_1"
+  default     = "sb-sc-d-apiocr-01"
 }
 
 variable "resource_group_name" {
