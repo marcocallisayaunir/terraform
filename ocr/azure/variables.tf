@@ -5,10 +5,11 @@ variable "global_tags" {
     architect = "Marco Callisaya"
     creation_date     = "13/09/24"
     deploy_method       = "Terraform"
-    environmnet      = "DES"
+    environmnet      = "PRO"
     location: "swedencentral"
     owner: "AI"
     provider: "Azure"
+    project: "OCR"
   }
 }
 

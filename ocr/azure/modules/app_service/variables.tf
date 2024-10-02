@@ -1,7 +1,7 @@
 variable "service_plane_name" {
   description = "Service Plan Name"
   type        = string
-  default      = "plan-sc-d-ocr-01"
+  default      = "plan-sc-p-ocr-01"
 }
 
 variable "resource_group_name" {
