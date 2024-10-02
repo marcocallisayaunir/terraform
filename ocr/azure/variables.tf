@@ -9,6 +9,7 @@ variable "global_tags" {
     location: "swedencentral"
     owner: "AI"
     provider: "Azure"
+    project: "OCR"
   }
 }
 
