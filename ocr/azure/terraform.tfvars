@@ -15,7 +15,7 @@ apps = {
     app_service_name            = "asw-sc-d-snies-be-01"
   },
   app6 = {
-    app_service_name            = "asw-sc-d-apiructboe-findyearxml-be-01"
+    app_service_name            = "asw-sc-d-ructboe-findyearxml-be-01"
   },
    app7 = {
     app_service_name            = "asw-sc-d-ocr-spa-01"
