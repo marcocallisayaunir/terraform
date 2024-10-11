@@ -1,24 +1,24 @@
 apps = {
   app1 = {
-    app_service_name            = "asw-sc-d-automatismo-be-01"
+    app_service_name            = "asw-sc-d-ia-ocr-automatismo-be-01"
   },
   app2 = {
-    app_service_name            = "asw-sc-d-matching-01-be"
+    app_service_name            = "asw-sc-d-ia-ocr-matching-01-be"
   },
   app3 = {
-    app_service_name            = "asw-sc-d-ocr-iarecognition-be-01"
+    app_service_name            = "asw-sc-d-ia-ocr-iarecognition-be-01"
   },
   app4 = {
-    app_service_name            = "asw-sc-d-secretaria-be-01"
+    app_service_name            = "asw-sc-d-ia-ocr-secretaria-be-01"
   },
   app5 = {
-    app_service_name            = "asw-sc-d-snies-be-01"
+    app_service_name            = "asw-sc-d-ia-ocr-snies-be-01"
   },
   app6 = {
-    app_service_name            = "asw-sc-d-ructboe-findyearxml-be-01"
+    app_service_name            = "asw-sc-d-ia-ocr-ructboe-findyearxml-be-01"
   },
    app7 = {
-    app_service_name            = "asw-sc-d-ocr-spa-01"
+    app_service_name            = "asw-sc-d-ia-ocr-spa-01"
   }
 }
 
