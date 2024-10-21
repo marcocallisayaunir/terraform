@@ -7,7 +7,8 @@ resource "azurerm_log_analytics_workspace" "example" {
 }
 
 resource "azurerm_application_insights" "example" {
-  name                = var.app_insight_name
+  for_each            = var.list_insights
+  name                = each.value.app_insight_name
   location            = var.location
   resource_group_name = var.resource_group_name
   workspace_id        = azurerm_log_analytics_workspace.example.id

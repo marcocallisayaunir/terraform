@@ -54,3 +54,30 @@ queues = {
     queue_name            = "datavalidationqueue"
   }
 }
+
+list_insights = {
+  insight1 = {
+    app_insight_name            = "ai-sc-d-ia-ocr-automatismo-be-01"
+  },
+  insight2 = {
+    app_insight_name            = "ai-sc-d-ia-ocr-matching-01-be"
+  },
+  insight3 = {
+    app_insight_name            = "ai-sc-d-ia-ocr-iarecognition-be-01"
+  },
+  insight4 = {
+    app_insight_name            = "ai-sc-d-ia-ocr-secretaria-be-01"
+  },
+  insight5 = {
+    app_insight_name            = "ai-sc-d-ia-ocr-snies-be-01"
+  },
+  insight6 = {
+    app_insight_name            = "ai-sc-d-ia-ocr-ructboe-findyearxml-be-01"
+  },
+  insight7 = {
+    app_insight_name            = "ai-sc-d-ia-ocr-spa-01"
+  },
+  insight8 = {
+    app_insight_name            = "ai-sc-d-ia-ocr-01"
+  },
+}

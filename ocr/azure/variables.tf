@@ -38,3 +38,11 @@ variable "queues" {
     queue_name  =  string
   }))
 }
+
+variable "list_insights" {
+  description = "List of the queues to create"
+  type = map(object({
+    queue_name  =  string
+  }))
+}
+

@@ -23,3 +23,9 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "list_insights" {
+  description = "A map of tags to assign to resources"
+  type        = map(string)
+  default     = {}
+}

@@ -31,6 +31,7 @@ module "app_service" {
 
 module "app_insight" {
   source = "./modules/app_insight"
+  list_insights = var.list_insights
   resource_group_name = var.resource_group_name
   location = var.location
   tags     = var.global_tags
