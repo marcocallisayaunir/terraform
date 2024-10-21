@@ -27,13 +27,12 @@ module "app_service" {
   tags     = var.global_tags
 }
 
-# Creacion de un services bus
+# app insight
 
-module "service_bus" {
-  source = "./modules/service_bus"
+module "app_insight" {
+  source = "./modules/app_insight"
   resource_group_name = var.resource_group_name
   location = var.location
-  queues   = var.queues
   tags     = var.global_tags
 }
 
@@ -47,6 +46,16 @@ module "azure_function" {
   tags     = var.global_tags
 }
 
+# Creacion de un services bus
+
+module "service_bus" {
+  source = "./modules/service_bus"
+  resource_group_name = var.resource_group_name
+  location = var.location
+  queues   = var.queues
+  tags     = var.global_tags
+}
+
 # Creacion del sql server
 
 module "sql_server" {
@@ -55,4 +64,7 @@ module "sql_server" {
   location = var.location
   tags     = var.global_tags
 }
+
+
+
 
