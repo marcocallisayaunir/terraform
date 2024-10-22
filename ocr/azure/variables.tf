@@ -45,3 +45,9 @@ variable "functions" {
     app_function_name  =  string
   }))
 }
+
+variable "list_insights" {
+  type = map(object({
+    app_insight_name  =  string
+  }))
+}
