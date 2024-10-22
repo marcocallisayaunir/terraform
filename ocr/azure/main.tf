@@ -29,43 +29,43 @@ module "app_service" {
 
 # app insight
 
-module "app_insight" {
-  source = "./modules/app_insight"
-  resource_group_name = var.resource_group_name
-  location = var.location
-  tags     = var.global_tags
-  insights = var.list_insights
-}
+# module "app_insight" {
+#   source = "./modules/app_insight"
+#   resource_group_name = var.resource_group_name
+#   location = var.location
+#   tags     = var.global_tags
+#   insights = var.list_insights
+# }
 
 # Creacion de un azure function
 
-module "azure_function" {
-  source = "./modules/azure_function"
-  resource_group_name = var.resource_group_name
-  location = var.location
-  service_plan_id = module.app_service.service_plan_id
-  tags     = var.global_tags
-  functions = var.app_functions
-}
+# module "azure_function" {
+#   source = "./modules/azure_function"
+#   resource_group_name = var.resource_group_name
+#   location = var.location
+#   service_plan_id = module.app_service.service_plan_id
+#   tags     = var.global_tags
+#   functions = var.app_functions
+# }
 
 # Creacion de un services bus
 
-module "service_bus" {
-  source = "./modules/service_bus"
-  resource_group_name = var.resource_group_name
-  location = var.location
-  queues   = var.queues
-  tags     = var.global_tags
-}
+# module "service_bus" {
+#   source = "./modules/service_bus"
+#   resource_group_name = var.resource_group_name
+#   location = var.location
+#   queues   = var.queues
+#   tags     = var.global_tags
+# }
 
 # Creacion del sql server
 
-module "sql_server" {
-  source = "./modules/sql_server"
-  resource_group_name = var.resource_group_name
-  location = var.location
-  tags     = var.global_tags
-}
+# module "sql_server" {
+#   source = "./modules/sql_server"
+#   resource_group_name = var.resource_group_name
+#   location = var.location
+#   tags     = var.global_tags
+# }
 
 
 
