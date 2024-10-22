@@ -17,7 +17,12 @@ resource "azurerm_linux_web_app" "api" {
   service_plan_id     = azurerm_service_plan.plan.id
   tags                = var.tags
 
-  site_config {}
+  site_config {
+    application_stack{
+      docker_image = "arquitectura-referencecqrs"
+      docker_image_tag = "1.0.12"
+    }
+  }
 }
 
 output "service_plan_id" {
