@@ -25,3 +25,10 @@ variable "tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "functions" {
+  description = "List of the apps to create"
+  type = map(object({
+    app_function_name  =  string
+  }))
+}

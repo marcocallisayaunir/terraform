@@ -45,6 +45,7 @@ module "azure_function" {
   location = var.location
   service_plan_id = module.app_service.service_plan_id
   tags     = var.global_tags
+  functions = var.functions
 }
 
 # Creacion del sql server

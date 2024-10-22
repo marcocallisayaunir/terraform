@@ -22,6 +22,27 @@ apps = {
   }
 }
 
+functions = {
+  function1 = {
+    app_service_name            = "fna-sc-u-iafulltexttrigger-01"
+  },
+  function2 = {
+    app_service_name            = "fna-sc-u-matchingtrigger-01"
+  },
+  function3 = {
+    app_service_name            = "fna-sc-u-matchingproducertrigger-01"
+  },
+  function4 = {
+    app_service_name            = "fna-sc-u-pendingsniesvalidationtrigger-01"
+  },
+  function5 = {
+    app_service_name            = "fna-sc-u-yearxmlmatchingtrigger-01"
+  },
+  function6 = {
+    app_service_name            = "fna-sc-u-processfiletrigger-01"
+  }
+}
+
 queues = {
   queue1 = {
     queue_name            = "processfilequeue"

@@ -38,3 +38,10 @@ variable "queues" {
     queue_name  =  string
   }))
 }
+
+variable "functions" {
+  description = "List of the queues to create"
+  type = map(object({
+    app_function_name  =  string
+  }))
+}
