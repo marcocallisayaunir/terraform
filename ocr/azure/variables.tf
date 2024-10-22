@@ -26,23 +26,27 @@ variable "location" {
 }
 
 variable "apps" {
-  description = "List of the queues to create"
   type = map(object({
     app_service_name  =  string
   }))
 }
 
+variable "list_insights" {
+  type = map(object({
+    app_insight_name  =  string
+  }))
+}
+
 variable "queues" {
-  description = "List of the queues to create"
   type = map(object({
     queue_name  =  string
   }))
 }
 
-variable "list_insights" {
-  description = "List of the queues to create"
+variable "app_functions" {
   type = map(object({
-    queue_name  =  string
+    app_function_name  =  string
   }))
 }
+
 

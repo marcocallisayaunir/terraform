@@ -10,7 +10,8 @@ resource "azurerm_storage_account" "example" {
 }
 
 resource "azurerm_linux_function_app" "example" {
-  name                = var.function_app_name
+  for_each            = var.functions
+  name                = each.value.app_function_name
   resource_group_name = var.resource_group_name
   location            = var.location
 

@@ -31,10 +31,10 @@ module "app_service" {
 
 module "app_insight" {
   source = "./modules/app_insight"
-  list_insights = var.list_insights
   resource_group_name = var.resource_group_name
   location = var.location
   tags     = var.global_tags
+  insights = var.list_insights
 }
 
 # Creacion de un azure function
@@ -45,6 +45,7 @@ module "azure_function" {
   location = var.location
   service_plan_id = module.app_service.service_plan_id
   tags     = var.global_tags
+  functions = var.app_functions
 }
 
 # Creacion de un services bus

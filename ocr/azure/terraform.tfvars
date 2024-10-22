@@ -79,5 +79,29 @@ list_insights = {
   },
   insight8 = {
     app_insight_name            = "ai-sc-d-ia-ocr-01"
+  }
+}
+
+app_functions = {
+  app_function_name1 = {
+    app_function_name            = "fna-sc-d-iafulltexttrigger-01"
   },
+  app_function_name2 = {
+    app_function_name            = "fna-sc-d-matchingtrigger-01"
+  },
+  app_function_name3 = {
+    app_function_name            = "fna-sc-d-matchingproducertrigger-01"
+  },
+  app_function_name4 = {
+    app_function_name            = "fna-sc-d-pendingsniesvalidationtrigger-01"
+  },
+  app_function_name5 = {
+    app_function_name            = "fna-sc-d-pendingyeartrigger-01"
+  },
+  app_function_name6 = {
+    app_function_name            = "fna-sc-d-processfiletrigger-01"
+  },
+  app_function_name7 = {
+    app_function_name            = "fna-sc-d-yearxmlmatchingtrigger-01"
+  }
 }
