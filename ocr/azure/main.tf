@@ -27,6 +27,17 @@ module "app_service" {
   tags     = var.global_tags
 }
 
+# app insight
+
+module "app_insight" {
+  source = "./modules/app_insight"
+  resource_group_name = var.resource_group_name
+  location = var.location
+  tags     = var.global_tags
+  insights = var.list_insights
+}
+
+
 # Creacion de un services bus
 
 module "service_bus" {
