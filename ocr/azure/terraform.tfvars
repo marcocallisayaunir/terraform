@@ -42,7 +42,7 @@ functions = {
     app_function_name            = "fna-sc-u-processfiletrigger-01"
   },
   function7 = {
-    app_function_name            = "fna-re-d-pendingyeartrigger-01"
+    app_function_name            = "fna-re-u-pendingyeartrigger-01"
   }
 }
 
