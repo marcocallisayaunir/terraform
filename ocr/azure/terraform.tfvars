@@ -23,26 +23,38 @@ apps = {
 }
 
 functions = {
-  function1 = {
-    app_function_name            = "fna-sc-u-iafulltexttrigger-01"
-  },
-  function2 = {
-    app_function_name            = "fna-sc-u-matchingtrigger-01"
-  },
-  function3 = {
-    app_function_name            = "fna-sc-u-matchingproducertrigger-01"
-  },
-  function4 = {
-    app_function_name            = "fna-sc-u-pendingsniesvalidationtrigger-01"
-  },
-  function5 = {
-    app_function_name            = "fna-sc-u-yearxmlmatchingtrigger-01"
-  },
-  function6 = {
-    app_function_name            = "fna-sc-u-processfiletrigger-01"
-  },
-  function7 = {
-    app_function_name            = "fna-re-d-pendingyeartrigger-01"
+  # function1 = {
+  #   app_function_name            = "fna-sc-u-iafulltexttrigger-01"
+  # },
+  # function2 = {
+  #   app_function_name            = "fna-sc-u-matchingtrigger-01"
+  # },
+  # function3 = {
+  #   app_function_name            = "fna-sc-u-matchingproducertrigger-01"
+  # },
+  # function4 = {
+  #   app_function_name            = "fna-sc-u-pendingsniesvalidationtrigger-01"
+  # },
+  # function5 = {
+  #   app_function_name            = "fna-sc-u-yearxmlmatchingtrigger-01"
+  # },
+  # function6 = {
+  #   app_function_name            = "fna-sc-u-processfiletrigger-01"
+  # },
+  # function7 = {
+  #   app_function_name            = "fna-sc-u-pendingyeartrigger-01"
+  # },
+  # function8 = {
+  #   app_function_name            = "fna-sc-u-datavalidationtrigger-01"
+  # },
+  # function9 = {
+  #   app_function_name            = "fna-sc-u-docprovidedtrigger-01"
+  # },
+  # function10 = {
+  #   app_function_name            = "fna-sc-u-iafulltextmatchingtrigger-01"
+  # }
+  function11 = {
+    app_function_name            = "fna-sc-u-requestpendingdoctrigger-01"
   }
 }
 

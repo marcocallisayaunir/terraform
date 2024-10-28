@@ -19,34 +19,34 @@ provider "azurerm" {
 
 # Creacion de un app service
 
-module "app_service" {
-  source = "./modules/app_service"
-  apps = var.apps
-  resource_group_name = var.resource_group_name
-  location = var.location
-  tags     = var.global_tags
-}
+# module "app_service" {
+#   source = "./modules/app_service"
+#   apps = var.apps
+#   resource_group_name = var.resource_group_name
+#   location = var.location
+#   tags     = var.global_tags
+# }
 
 # app insight
 
-module "app_insight" {
-  source = "./modules/app_insight"
-  resource_group_name = var.resource_group_name
-  location = var.location
-  tags     = var.global_tags
-  insights = var.list_insights
-}
+# module "app_insight" {
+#   source = "./modules/app_insight"
+#   resource_group_name = var.resource_group_name
+#   location = var.location
+#   tags     = var.global_tags
+#   insights = var.list_insights
+# }
 
 
 # Creacion de un services bus
 
-module "service_bus" {
-  source = "./modules/service_bus"
-  resource_group_name = var.resource_group_name
-  location = var.location
-  queues   = var.queues
-  tags     = var.global_tags
-}
+# module "service_bus" {
+#   source = "./modules/service_bus"
+#   resource_group_name = var.resource_group_name
+#   location = var.location
+#   queues   = var.queues
+#   tags     = var.global_tags
+# }
 
 # Creacion de un azure function
 
@@ -54,17 +54,17 @@ module "azure_function" {
   source = "./modules/azure_function"
   resource_group_name = var.resource_group_name
   location = var.location
-  service_plan_id = module.app_service.service_plan_id
+  service_plan_id = "/subscriptions/0f039cb4-2405-4c79-a4c9-9660c38a6b78/resourceGroups/rg-sc-u-ocr-01/providers/Microsoft.Web/serverfarms/plan-sc-u-ocr-01"
   tags     = var.global_tags
   functions = var.functions
 }
 
 # Creacion del sql server
 
-module "sql_server" {
-  source = "./modules/sql_server"
-  resource_group_name = var.resource_group_name
-  location = var.location
-  tags     = var.global_tags
-}
+# module "sql_server" {
+#   source = "./modules/sql_server"
+#   resource_group_name = var.resource_group_name
+#   location = var.location
+#   tags     = var.global_tags
+# }
 
