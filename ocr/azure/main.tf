@@ -17,7 +17,7 @@ provider "azurerm" {
   tenant_id       = "22c8b4a4-d926-43b2-bcc7-87b998590b47"
 }
 
-# Creacion de un app service
+#Creacion de un app service
 
 module "app_service" {
   source = "./modules/app_service"
