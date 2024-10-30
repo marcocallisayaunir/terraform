@@ -1,5 +1,9 @@
 # OCR
 ocr/aws/.terraform/*
+ocr/aws/terraform.tfstate
+ocr/aws/terraform.tfstate
 ocr/azure/.terraform/*
+ocr/azure/terraform.tfstate
+ocr/azure/terraform.tfstate
 .git/*
 .terraform.tfstate
