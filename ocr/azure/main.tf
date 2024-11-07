@@ -41,11 +41,11 @@ module "app_insight" {
 
 module "azure_function" {
   source = "./modules/azure_function"
+  functions = var.functions
   resource_group_name = var.resource_group_name
   location = var.location
   service_plan_id = module.app_service.service_plan_id
   tags     = var.global_tags
-  functions = var.functions
 }
 
 # Creacion de un services bus
