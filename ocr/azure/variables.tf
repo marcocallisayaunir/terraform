@@ -3,9 +3,9 @@ variable "global_tags" {
   type        = map(string)
   default     = {
     architect = "Marco Callisaya"
-    creation_date     = "13/09/24"
+    creation_date     = "07/11/24"
     deploy_method       = "Terraform"
-    environmnet      = "PRE"
+    environmnet      = "PRO"
     location: "swedencentral"
     owner: "AI"
     provider: "Azure"
@@ -16,7 +16,7 @@ variable "global_tags" {
 variable "resource_group_name" {
   description = "Resource group name"
   type        = string
-  default     = "rg-sc-u-ocr-01"
+  default     = "rg-sc-p-ocr-01"
 }
 
 variable "location" {

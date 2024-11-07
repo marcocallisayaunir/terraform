@@ -1,6 +1,6 @@
 variable "storage_account_name" {
   type        = string
-  default     = "stscustgappfunctions01"
+  default     = "stscpstgappfunctions01"
 }
 
 variable "resource_group_name" {

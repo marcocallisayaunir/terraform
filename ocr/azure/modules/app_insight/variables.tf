@@ -1,6 +1,6 @@
 variable "log_analytics_workspace_name" {
   type        = string
-  default      = "logw-sc-u-ocr-01"
+  default      = "logw-sc-p-ocr-01"
 }
 
 variable "resource_group_name" {

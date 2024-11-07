@@ -1,6 +1,6 @@
 variable "servicebus_namespace_name" {
   type        = string
-  default     = "sb-sc-u-ocr-01"
+  default     = "sb-sc-p-ocr-01"
 }
 
 variable "resource_group_name" {
