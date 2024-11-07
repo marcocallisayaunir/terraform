@@ -43,7 +43,7 @@ module "azure_function" {
   source = "./modules/azure_function"
   resource_group_name = var.resource_group_name
   location = var.location
-  service_plan_id = "/subscriptions/0f039cb4-2405-4c79-a4c9-9660c38a6b78/resourceGroups/rg-sc-u-ocr-01/providers/Microsoft.Web/serverfarms/plan-sc-u-ocr-01"
+  service_plan_id = module.app_service.service_plan_id
   tags     = var.global_tags
   functions = var.functions
 }
