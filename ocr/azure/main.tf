@@ -37,6 +37,16 @@ module "app_insight" {
   insights = var.list_insights
 }
 
+# Creacion de un azure function
+
+module "azure_function" {
+  source = "./modules/azure_function"
+  resource_group_name = var.resource_group_name
+  location = var.location
+  service_plan_id = module.app_service.service_plan_id
+  tags     = var.global_tags
+  functions = var.functions
+}
 
 # Creacion de un services bus
 
@@ -48,16 +58,7 @@ module "service_bus" {
   tags     = var.global_tags
 }
 
-# Creacion de un azure function
 
-module "azure_function" {
-  source = "./modules/azure_function"
-  resource_group_name = var.resource_group_name
-  location = var.location
-  service_plan_id = module.app_service.service_plan_id
-  tags     = var.global_tags
-  functions = var.functions
-}
 
 # Creacion del sql server
 
