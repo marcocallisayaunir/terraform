@@ -72,7 +72,7 @@ functions = {
     app_function_name            = "fna-sc-p-pendingsniesvalidationtrigger-01"
   },
   function8 = {
-    app_function_name            = "fna-re-p-pendingyeartrigger-01"
+    app_function_name            = "fna-sc-p-pendingyeartrigger-01"
   },
   function9 = {
     app_function_name            = "fna-sc-p-processfiletrigger-01"

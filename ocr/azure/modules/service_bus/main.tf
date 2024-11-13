@@ -7,7 +7,6 @@ resource "azurerm_servicebus_namespace" "example" {
   resource_group_name = var.resource_group_name
   sku                 = "Standard"
   tags                = var.tags
-  capacity            = 1
 }
 
 resource "azurerm_servicebus_queue" "example" {
